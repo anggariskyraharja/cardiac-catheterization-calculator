@@ -46,7 +46,7 @@ export class Tab1Page {
       pulmonary = this.PV - this.PA;
       this.Flow = (this.Aorta - mixed) / pulmonary;
       this.Flowstring = (this.Flow).toFixed(1);
-      if (this.Flow = 1) {
+      if (this.Flow == 1) {
         this.Classification = "no shunting or bidirectional shunting in equal magnitude"
       } else if (this.Flow <= 1.5){
         this.Classification = "insignificant shunt (low flow)" 
