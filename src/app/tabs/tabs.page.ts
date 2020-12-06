@@ -7,16 +7,6 @@ import { AdOptions, AdSize, AdPosition } from "capacitor-admob";
 const { AdMob } = Plugins;
 
 const { FirebaseAnalytics } = Plugins;
-FirebaseAnalytics.initializeFirebase({
-  apiKey: "...",
-  authDomain: "...",
-  databaseURL: "...",
-  projectId: "...",
-  storageBucket: "...",
-  messagingSenderId: "...",
-  appId: "...",
-  measurementId: "...",
-});
 FirebaseAnalytics.enable();
 
 @Component({
