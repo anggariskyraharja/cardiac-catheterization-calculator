@@ -87,9 +87,11 @@ export class Tab2Page {
       //hitung oxygen consumption
       if (this.neonate == true){
         this.oxygen = 130
+        this.calculate2();
       } else {
         if (this.Age < 3){
           this.oxygen = 160
+          this.calculate2();
         } else {
           if (this.q1 == 'q11'){
             if (this.Age < 4){
