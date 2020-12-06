@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { Plugins } from "@capacitor/core";
 
 @Component({
   selector: 'app-tab1',
