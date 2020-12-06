@@ -1,17 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      McGoon Index
+      PARI
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item class="color1">
+    <ion-label position="stacked">Description</ion-label>
+    <ion-text>
+      <p>Pulmonary artery resistance index is resistance through the pulmonary vasculature, used to determine the candidate for closure of acyanotic congenital heart defect.</p>
+    </ion-text>
+  </ion-item>
+  <ion-item class="color2">
+    <ion-label position="floating">RPA diameter (mm)</ion-label>
+    <ion-input type="number" [(ngModel)]= "RPA" ></ion-input>
+  </ion-item>
+  <ion-item class="color2">
+    <ion-label position="floating">LPA diameter (mm)</ion-label>
+    <ion-input type="number" [(ngModel)]= "LPA" ></ion-input>
+  </ion-item>
+  <ion-item class="color2">
+    <ion-label position="floating">DAo diameter (mm)</ion-label>
+    <ion-input type="number" [(ngModel)]= "DAo" ></ion-input>
+  </ion-item>
+  <ion-item class="color2">
+    <ion-label position="floating">Body weight (kg)</ion-label>
+    <ion-input type="number" [(ngModel)]= "weight" ></ion-input>
+  </ion-item>
+  <ion-item class="color2">
+    <ion-label position="floating">Height (cm)</ion-label>
+    <ion-input type="number" [(ngModel)]= "height" ></ion-input>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" (click)="calculate()" class="color3">Calculate<ion-icon slot="end" name="checkmark-circle-outline"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="clear()" class="color3">Clear<ion-icon slot="end" name="close-circle-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card class="color4">
+    <div *ngIf="classification1">
+      <p>Body surface area (Du Bois formula): <b>{{ BSAstring }} m<sup>2</sup></b></p>
+      <p>McGoon ratio: <b>{{ mcgoonstring }}</b> ({{classification1}})</p>
+      <p>Nakata index: <b>{{ nakatastring }}</b> ({{classification2}})</p>
+    </div>
+  </ion-card>
 </ion-content>

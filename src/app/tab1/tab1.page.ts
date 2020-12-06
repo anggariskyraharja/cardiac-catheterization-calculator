@@ -50,10 +50,10 @@ export class Tab1Page {
         this.Classification = "no shunting or bidirectional shunting in equal magnitude"
       } else if (this.Flow < 1){
         this.Classification = "right to left shunt" 
-      } else if (this.Flow <=1,5){
-        this.Classification = "left to right shunt"
       } else if (this.Flow > 1.5) {
         this.Classification = "significant left to right shunt (high flow), candidates for surgical closure or transcatheter device closure"
+      } else {
+        this.Classification = "left to right shunt"
       }
     }
   }
