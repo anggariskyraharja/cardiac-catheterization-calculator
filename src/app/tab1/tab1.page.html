@@ -49,5 +49,10 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <p>The flow ratio is: <b>{{ Flowstring }}</b></p>
+  <ion-card class="ion-text-center" color="primary">
+    <div *ngIf="classification">
+      <p>The flow ratio: <b>{{ Flowstring }}</b></p>
+      <p>Classification: <b>{{Classification }}</b></p>
+    </div>
+  </ion-card>
 </ion-content>
