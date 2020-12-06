@@ -16,8 +16,6 @@ export class Tab1Page {
   Flowstring: string;
   Classification: string;
 
-  
-
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Missing Value',
@@ -39,7 +37,7 @@ export class Tab1Page {
   }
 
   calculate() {
-    if (this.Aorta == null || this.SVC == null || this.IVC == null || this.PA || this.PV){
+    if (this.Aorta == null || this.SVC == null || this.IVC == null || this.PA == null || this.PV == null){
       this.presentAlert()
     } else {
       var mixed : number;
