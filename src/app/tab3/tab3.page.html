@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      PARI
+      PA Size
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
   <ion-item class="color1">
     <ion-label position="stacked">Description</ion-label>
     <ion-text>
-      <p>Pulmonary artery resistance index is resistance through the pulmonary vasculature, used to determine the candidate for closure of acyanotic congenital heart defect.</p>
+      <p>Pulmonary artery size calculation is used to select which patient is eligible for total correction surgery in cyanotic congenital heart disease.</p>
     </ion-text>
   </ion-item>
   <ion-item class="color2">
@@ -45,7 +45,7 @@
   </ion-grid>
   <ion-card class="color4">
     <div *ngIf="classification1">
-      <p>Body surface area (Du Bois formula): <b>{{ BSAstring }} m<sup>2</sup></b></p>
+      <p>Body surface area (Mosteller formula): <b>{{ BSAstring }} m<sup>2</sup></b></p>
       <p>McGoon ratio: <b>{{ mcgoonstring }}</b> ({{classification1}})</p>
       <p>Nakata index: <b>{{ nakatastring }}</b> ({{classification2}})</p>
     </div>

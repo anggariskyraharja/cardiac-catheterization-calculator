@@ -50,7 +50,7 @@ export class Tab3Page {
     if (this.RPA == null || this.LPA == null || this.DAo == null || this.weight == null || this.height == null){
       this.presentAlert()
     } else {
-      this.BSA = 0.007184 * Math.pow(this.weight, 0.425) * Math.pow (this.height, 0.725);
+      this.BSA = Math.sqrt((this.weight*this.height/3600)) ;
       this.BSAstring = this.BSA.toFixed(2);
       this.mcgoon = (this.RPA + this.LPA) / this.DAo;
       this.mcgoonstring = this.mcgoon.toFixed(1);
