@@ -13,68 +13,68 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-item>
+  <ion-item class="color1">
     <ion-label position="stacked">Description</ion-label>
     <ion-text>
       <p>Resistance through the pulmonary vasculature, used to determine the candidate for closure of acyanotic congenital heart defect.</p>
     </ion-text>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-radio-group value="q11" name="q1" (ionChange)="checkq1($event)"> 
         <ion-text>Gender</ion-text>
-      <ion-item>
+      <ion-item class="color2">
         <ion-text>Male</ion-text>
         <ion-radio slot="start" value="q11"></ion-radio>
       </ion-item>
-      <ion-item>
+      <ion-item class="color2">
         <ion-text>Female</ion-text>
         <ion-radio slot="start" value="q12"></ion-radio>
       </ion-item>
     </ion-radio-group>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label>Neonate</ion-label>
     <ion-toggle slot="start" [(ngModel)]="neonate"></ion-toggle>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label position="floating">PA pressure (mmHG)</ion-label>
     <ion-input type="number" [(ngModel)]= "PA" ></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label position="floating">LA pressure (mmHG)</ion-label>
     <ion-input type="number" [(ngModel)]= "LA" ></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label position="floating">SaO2 PV (%)</ion-label>
     <ion-input type="number" [(ngModel)]= "PV" ></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label position="floating">SaO2 PA (%)</ion-label>
     <ion-input type="number" [(ngModel)]= "PAs" ></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label position="floating">Hb (g/dL)</ion-label>
     <ion-input type="number" [(ngModel)]= "Hb" ></ion-input>
   </ion-item>
-  <ion-item *ngIf="neonate == false" >
+  <ion-item *ngIf="neonate == false" class="color2">
     <ion-label position="floating">Age (years)</ion-label>
     <ion-input type="number" [(ngModel)]= "Age" ></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item class="color2">
     <ion-label position="floating">Heart rate (beats/minute)</ion-label>
     <ion-input type="number" [(ngModel)]= "HR" ></ion-input>
   </ion-item>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button expand="block" (click)="calculate()" color="danger">Calculate<ion-icon slot="end" name="checkmark-circle-outline"></ion-icon></ion-button>
+        <ion-button expand="block" (click)="calculate()" class="color3">Calculate<ion-icon slot="end" name="checkmark-circle-outline"></ion-icon></ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="block" (click)="clear()" fill="outline" color="primary">Clear<ion-icon slot="end" name="close-circle-outline"></ion-icon></ion-button>
+        <ion-button expand="block" (click)="clear()" class="color3">Clear<ion-icon slot="end" name="close-circle-outline"></ion-icon></ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-card class="ion-text-center" color="primary">
+  <ion-card class="color4">
     <div *ngIf="classification">
       <p>Pulmonary flow circulation (Qp) is <b>{{ qpstring }}</b></p>
       <p>Pulmonary Artery Resistance Index (PARI) is <b>{{ paristring }}</b></p>
