@@ -1,0 +1,7 @@
+{
+  "name": "cardiac-catheterization-calculator",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
