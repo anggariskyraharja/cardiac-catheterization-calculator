@@ -33,6 +33,9 @@ export class Tab1Page {
     this.IVC = null;
     this.PA = null;
     this.PV = null;
+    this.Classification = null;
+    this.Flowstring = null;
+    this.Flow = null;
   }
 
   calculate() {
