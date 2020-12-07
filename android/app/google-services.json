@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "582842235297",
+    "project_id": "cardiac-catheterization",
+    "storage_bucket": "cardiac-catheterization.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582842235297:android:52bbf787bcdfdd6e68f3e0",
+        "android_client_info": {
+          "package_name": "com.imedicalapps.cardiaccatheterizationcalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582842235297-a7phifb3e84gsjk5vdca5otv089rnagd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB2jHAJlw20QmtxChgQAUEeDbu0rp9t7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582842235297-a7phifb3e84gsjk5vdca5otv089rnagd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582842235297-92k0ncpmqq5thkknd1nj6dch60211f1s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.imedicalapps.cardiaccatheterizationcalculator"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
